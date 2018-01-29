@@ -7,7 +7,6 @@ RUN apt-get update && apt-get install -y \
     openssl \
     ca-certificates \
     zlib1g-dev \
-    libxml2-dev \
-    php7.1-bcmath
+    libxml2-dev
 
-RUN docker-php-ext-install mcrypt pdo pdo_mysql zip mbstring soap tokenizer
+RUN docker-php-ext-install mcrypt pdo pdo_mysql zip mbstring soap tokenizer bcmath
