@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y \
     openssl \
     ca-certificates \
     zlib1g-dev \
-    libxml2-dev
+    libxml2-dev \
+    git
 
 RUN pecl install xdebug
 
