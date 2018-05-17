@@ -15,7 +15,7 @@ RUN touch /usr/local/etc/php/php.ini
 
 RUN echo "zend_extension=/usr/local/lib/php/extensions/no-debug-non-zts-20160303/xdebug.so" > /usr/local/etc/php/php.ini
 
-RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > var/www/cc-test-reporter
+RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > /var/www/cc-test-reporter
 
 RUN chmod u+x /var/www/cc-test-reporter
 
